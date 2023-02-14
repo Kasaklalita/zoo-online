@@ -1,7 +1,12 @@
 import "./App.css";
+import MainHeader from "./components/MainHeader";
 
 function App() {
-  return <div className="App bg-black w-full h-10"></div>;
+  return (
+    <div className="">
+      <MainHeader />
+    </div>
+  );
 }
 
 export default App;
