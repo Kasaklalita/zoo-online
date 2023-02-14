@@ -1,0 +1,18 @@
+.introSection {
+  @apply w-full py-48;
+  background: url("../assets/intro-background.jpg") center no-repeat;
+  background-size: cover;
+  height: calc(100vh - 96px);
+  padding: 12% 360px;
+}
+
+.title {
+  @apply mb-9;
+  width: 800px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 89px;
+  line-height: 104px;
+  color: #fefefe;
+}
