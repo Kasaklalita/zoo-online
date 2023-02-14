@@ -1,5 +1,5 @@
 .introSection {
-  @apply w-full py-48;
+  @apply w-full py-48 relative;
   background: url("../assets/intro-background.jpg") center no-repeat;
   background-size: cover;
   height: calc(100vh - 96px);
