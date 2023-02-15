@@ -5,6 +5,7 @@ import IntroSection from "./components/IntroSection";
 import MainHeader from "./components/MainHeader";
 import PetsInZooSection from "./components/PetsInZooSection";
 import PlayAndFeedSection from "./components/PlayAndFeedSection";
+import TestimonialsSection from "./components/TestimonialsSection";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutUsSection />
       <PetsInZooSection />
       <PlayAndFeedSection />
+      <TestimonialsSection />
     </div>
   );
 }
