@@ -14,7 +14,7 @@ export default function ProgressBar({
       className="@apply flex flex-col items-center shrink-0"
       style={{ width: "245px" }}
     >
-      <div>
+      <div className="mb-3">
         <span className="text-[#333333] font-black text-2xl">
           {currentValue}/
         </span>
