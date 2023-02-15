@@ -3,6 +3,7 @@ import AboutUsSection from "./components/AboutUsSection";
 import AboutWorkSection from "./components/AboutWorkSection";
 import IntroSection from "./components/IntroSection";
 import MainHeader from "./components/MainHeader";
+import PetsInZooSection from "./components/PetsInZooSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <IntroSection />
       <AboutWorkSection />
       <AboutUsSection />
+      <PetsInZooSection />
     </div>
   );
 }

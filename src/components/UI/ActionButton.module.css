@@ -1,0 +1,16 @@
+.actionButton {
+  @apply py-3 rounded cursor-pointer;
+  width: 245px;
+  background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+}
+
+.text {
+  @apply text-center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

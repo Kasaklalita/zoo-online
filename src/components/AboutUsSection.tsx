@@ -1,5 +1,5 @@
 import React from "react";
-import OurFeature from "../OurFeature";
+import OurFeature from "./OurFeature";
 import MainContainer from "./layout/MainContainer";
 
 export default function AboutUsSection() {
