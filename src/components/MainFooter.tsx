@@ -21,7 +21,7 @@ export default function MainFooter() {
 
         <div className="max-2xl:flex-col max-2xl:gap-10 flex gap-32 items-start">
           <div className="flex flex-col gap-16 pt-4">
-            <nav className="flex gap-16">
+            <nav className="flex max-sm:gap-12 sm:gap-16">
               <a href="" className="text-[#fefefe] font-medium">
                 About
               </a>
