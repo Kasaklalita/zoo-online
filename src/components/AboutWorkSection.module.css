@@ -1,0 +1,28 @@
+.container {
+  @apply flex flex-col;
+}
+
+@media (min-width: 320px) {
+  .container {
+    @apply px-2.5 gap-5;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    @apply gap-8;
+    width: 600px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    width: 790px;
+  }
+}

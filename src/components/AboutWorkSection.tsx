@@ -2,12 +2,17 @@ import React from "react";
 import deers from "./../assets/deers.jpg";
 import PlayActionButton from "./UI/PlayActionButton";
 import ProgressBar from "./UI/ProgressBar";
+import cls from "./AboutWorkSection.module.css";
 
 export default function AboutWorkSection() {
   return (
-    <div className="flex justify-center py-24">
-      <div className="flex flex-col gap-8" style={{ width: "790px" }}>
-        <h1 className=" font-black text-5xl leading-[1.2] text-[#333333]">
+    <div
+      className="flex justify-center
+        max-sm:pb-12 max-xl:pb-16 pb-24
+        max-sm:pt-12 pt-24"
+    >
+      <div className={cls.container}>
+        <h1 className="max-sm:text-4xl font-black text-5xl leading-[1.2] text-[#333333]">
           How it works?
         </h1>
         <p className="text-sm text-[#4f4f4f]">
@@ -23,7 +28,7 @@ export default function AboutWorkSection() {
           species and their habitat.
         </p>
         <img src={deers} alt="" className="w-full" />
-        <div className="flex flex-col items-center gap-8">
+        <div className="flex flex-col items-center max-sm:gap-5 gap-8">
           <ProgressBar currentValue={1} maxValue={4} />
           <PlayActionButton text="watch online" />
         </div>
