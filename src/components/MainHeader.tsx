@@ -9,11 +9,11 @@ export default function MainHeader() {
     <div className="w-full px-36 h-24 flex justify-between items-center">
       <img src={logoLight} className="w-14 shrink-0" />
       <nav className="h-full flex justify-between gap-20 items-center">
-        <NavigationLink text="About" />
-        <NavigationLink text="Zoos" />
-        <NavigationLink text="Map" />
-        <NavigationLink text="Contact Us" />
-        <NavigationLink text="Design" />
+        <NavigationLink to="/" text="About" />
+        <NavigationLink to="/zoo" text="Zoos" />
+        <NavigationLink to="/" text="Map" />
+        <NavigationLink to="/" text="Contact Us" />
+        <NavigationLink to="/" text="Design" />
       </nav>
       <ThemeToggler />
     </div>
