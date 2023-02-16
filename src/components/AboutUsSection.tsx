@@ -1,6 +1,6 @@
 import React from "react";
 import OurFeature from "./OurFeature";
-import MainContainer from "./layout/MainContainer";
+import cls from "./AboutUsSection.module.css";
 import love from "./../assets/love.svg";
 import inspiration from "./../assets/inspiration.svg";
 import achievement from "./../assets/achievement.svg";
@@ -28,19 +28,17 @@ export default function AboutUsSection() {
   ];
 
   return (
-    <div className="bg-[#F2F2F2] flex justify-around pt-24 pb-32">
-      <MainContainer>
-        <div className="flex justify-between gap-8">
-          {ourFeatures.map((feature) => (
-            <OurFeature
-              key={feature.title}
-              image={feature.image}
-              title={feature.title}
-              description={feature.description}
-            />
-          ))}
-        </div>
-      </MainContainer>
+    <div className="px-2.5 bg-[#F2F2F2] flex justify-around pt-24 pb-32">
+      <div className={cls.container}>
+        {ourFeatures.map((feature) => (
+          <OurFeature
+            key={feature.title}
+            image={feature.image}
+            title={feature.title}
+            description={feature.description}
+          />
+        ))}
+      </div>
     </div>
   );
 }

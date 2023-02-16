@@ -1,0 +1,28 @@
+.container {
+  @apply flex justify-between gap-5;
+  max-width: 1200px;
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    @apply flex-col gap-8;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    @apply gap-8;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    @apply gap-5;
+    max-width: 300px;
+  }
+}
