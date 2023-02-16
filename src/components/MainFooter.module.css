@@ -1,0 +1,9 @@
+.mainFooter__upper {
+  @apply flex justify-between border border-[#fefefe];
+}
+
+@media (max-width: 1200px) {
+  .mainFooter__upper {
+    @apply flex-col gap-12;
+  }
+}

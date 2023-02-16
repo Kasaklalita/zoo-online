@@ -7,7 +7,7 @@ export default function ContactUsFooterForm() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   return (
-    <div className="w-96">
+    <div className="max-w-96">
       <h1 className="text-[#fefefe] font-black text-xl mb-8">Contact Us</h1>
       <form className="flex flex-col gap-5">
         <PrimaryInput
