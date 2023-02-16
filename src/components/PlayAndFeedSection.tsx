@@ -15,7 +15,7 @@ export default function PlayAndFeedSection() {
             The opportunity to easily and naturally (but as often as possible)
             donate to the needs of animals that you like.
           </p>
-          <div className="flex items-center justify-between mt-24 mb-16">
+          <div className="w-full flex items-center justify-between mt-24 mb-16">
             <img src={panda} />
             <img src={arrow} />
             <img src={zoo} />

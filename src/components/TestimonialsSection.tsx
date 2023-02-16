@@ -4,6 +4,7 @@ import { ITestimonial } from "../types";
 import TestimonialCard from "./TestimonialCard";
 import ProgressBar from "./UI/ProgressBar";
 import ActionButton from "./UI/ActionButton";
+import Veniamin from "./../assets/Veniamin.jpg";
 
 export default function TestimonialsSection() {
   const testimonials: ITestimonial[] = [
@@ -11,13 +12,13 @@ export default function TestimonialsSection() {
       fullName: "Veniamin Polienko",
       description:
         "As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.",
-      picture: null,
+      picture: Veniamin,
     },
     {
-      fullName: "Veniamin Polienko",
+      fullName: "Veniamin Polienko 2",
       description:
         "As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.",
-      picture: null,
+      picture: Veniamin,
     },
   ];
   return (
@@ -26,7 +27,7 @@ export default function TestimonialsSection() {
         <div className="flex flex-col gap-8 items-center">
           <div className="flex gap-8">
             {testimonials.map((testimonial) => (
-              <TestimonialCard {...testimonial} />
+              <TestimonialCard key={testimonial.fullName} {...testimonial} />
             ))}
           </div>
           <ProgressBar currentValue={2} maxValue={8} />
