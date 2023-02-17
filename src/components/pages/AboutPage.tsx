@@ -1,4 +1,5 @@
 import React from "react";
+import DonationForm from "../DonationForm";
 import AboutUsSection from "./../AboutUsSection";
 import AboutWorkSection from "./../AboutWorkSection";
 import IntroSection from "./../IntroSection";
@@ -17,6 +18,7 @@ export default function AboutPage() {
       <PetsInZooSection />
       <PlayAndFeedSection />
       <TestimonialsSection />
+      <DonationForm />
     </PageTemplate>
   );
 }

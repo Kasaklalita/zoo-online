@@ -5,6 +5,7 @@ import PageTemplate from "./PageTemplate";
 import { pets } from "../../data";
 import PetsCircles from "../PetsCircles";
 import { IPet } from "../../types";
+import DonationForm from "../DonationForm";
 
 export default function ZooPage() {
   const [selectedPet, setSelectedPet] = useState<IPet>(pets[0]);
