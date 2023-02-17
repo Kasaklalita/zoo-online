@@ -6,6 +6,7 @@ export interface ITestimonial {
 
 export interface IPet {
   name: string;
+  title: string;
   picture: any;
   description: string;
   population: string;

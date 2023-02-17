@@ -24,7 +24,7 @@ export default function ZooPage() {
         </div>
         <div className="">
           <h1 className="text-[#333333] max-sm:text-2xl text-5xl font-black mb-10">
-            The Beijing Zoo
+            {selectedPet.title}
           </h1>
           <div className="flex gap-8 max-lg:flex-col">
             <div className="flex flex-col gap-8">
