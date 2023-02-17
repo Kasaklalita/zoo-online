@@ -8,9 +8,6 @@ interface IPetCircleProps {
 }
 
 export default function PetCircle(props: IPetCircleProps) {
-  const petCircleClass = props.isActive
-    ? ""
-    : "w-28 h-28 bg-center bg-no-repeat bg-cover rounded-full";
   return (
     <>
       {props.isActive == true ? (
@@ -23,14 +20,14 @@ export default function PetCircle(props: IPetCircleProps) {
         >
           <div
             onClick={props.onClick}
-            className="w-36 h-36 rounded-full bg-center bg-no-repeat bg-cover"
+            className="max-sm:w-14 max-sm:h-14 w-36 h-36 rounded-full bg-center bg-no-repeat bg-cover"
             style={{ backgroundImage: `url(${props.pet.picture})` }}
           ></div>
         </div>
       ) : (
         <div
           onClick={props.onClick}
-          className={petCircleClass}
+          className="max-sm:w-12 max-sm:h-12 w-28 h-28 bg-center bg-no-repeat bg-cover rounded-full"
           style={{ backgroundImage: `url(${props.pet.picture})` }}
         ></div>
       )}
