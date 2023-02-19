@@ -50,13 +50,18 @@ export default function MainFooter() {
                 zoo.online@gmail.com
               </p>
               <div className="flex gap-4">
-                <SocialMediaIcon
-                  icon={instagram}
-                  to="https://www.instagram.com/"
-                />
-                <SocialMediaIcon icon={twitter} to="https://twitter.com/" />
-                <SocialMediaIcon icon={youtube} to="https://www.youtube.com/" />
-                <SocialMediaIcon icon={vk} to="https://vk.com" />
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i className="fa-brands fa-instagram text-xl text-[#ffffff]"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <i className="fa-brands fa-twitter text-xl text-[#ffffff]"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <i className="fa-brands fa-youtube text-xl text-[#ffffff]"></i>
+                </a>
+                <a href="https://vk.com/" target="_blank">
+                  <i className="fa-brands fa-vk text-xl text-[#ffffff]"></i>
+                </a>
               </div>
             </div>
           </div>

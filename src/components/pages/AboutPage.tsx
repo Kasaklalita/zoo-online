@@ -15,10 +15,10 @@ export default function AboutPage() {
       <IntroSection />
       <AboutWorkSection />
       <AboutUsSection />
-      <PetsInZooSection />
+      {/* <PetsInZooSection /> */}
       <PlayAndFeedSection />
       <TestimonialsSection />
-      <DonationForm />
+      {/* <DonationForm /> */}
     </PageTemplate>
   );
 }

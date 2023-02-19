@@ -14,11 +14,24 @@ export default function IntroSection() {
         <h1 className={cls.title}>Watch your favorite animal online</h1>
         <PlayActionButton text="Watch online" />
       </div>
-      <div className="absolute bottom-28 left-36 flex flex-col gap-4">
-        <SocialMediaIcon icon={instagram} to="https://www.instagram.com/" />
+      <div className={cls.socialMedia}>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i className="fa-brands fa-instagram text-xl text-[#ffffff]"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <i className="fa-brands fa-twitter text-xl text-[#ffffff]"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <i className="fa-brands fa-youtube text-xl text-[#ffffff]"></i>
+        </a>
+        <a href="https://vk.com/" target="_blank">
+          <i className="fa-brands fa-vk text-xl text-[#ffffff]"></i>
+        </a>
+
+        {/* <SocialMediaIcon icon={instagram} to="https://www.instagram.com/" />
         <SocialMediaIcon icon={twitter} to="https://twitter.com/" />
         <SocialMediaIcon icon={youtube} to="https://www.youtube.com/" />
-        <SocialMediaIcon icon={vk} to="https://vk.com" />
+        <SocialMediaIcon icon={vk} to="https://vk.com" /> */}
       </div>
     </div>
   );

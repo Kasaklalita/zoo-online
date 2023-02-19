@@ -22,10 +22,10 @@ export default function TestimonialsSection() {
     },
   ];
   return (
-    <div>
+    <div className="px-5 ">
       <SectionTemplate title="Testimonials">
         <div className="flex flex-col gap-8 items-center">
-          <div className="flex gap-8">
+          <div className="flex gap-8 max-lg:flex-col">
             {testimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.fullName} {...testimonial} />
             ))}

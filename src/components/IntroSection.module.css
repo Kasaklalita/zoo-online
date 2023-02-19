@@ -1,18 +1,50 @@
 .introSection {
-  @apply w-full py-48 relative;
+  @apply w-full relative;
   background: url("../assets/intro-background.jpg") center no-repeat;
   background-size: cover;
   height: calc(100vh - 96px);
-  padding: 12% 360px;
+  padding: 206px 20%;
 }
 
 .title {
   @apply mb-9;
-  width: 800px;
+  max-width: 800px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
   font-size: 89px;
   line-height: 104px;
   color: #fefefe;
+}
+
+.socialMedia {
+  @apply absolute bottom-28 left-36 flex flex-col items-center gap-4 max-sm:bottom-5 max-sm:flex-row;
+}
+
+@media (max-width: 1440px) {
+  .introSection {
+    @apply px-36 py-36;
+  }
+  .title {
+    @apply mr-0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .introSection {
+    @apply px-5 py-32;
+  }
+  .socialMedia {
+    @apply left-5;
+  }
+  .title {
+    font-size: 64px;
+    line-height: 72px;
+  }
+}
+
+@media (max-width: 640px) {
+  .introSection {
+    @apply px-5 py-16;
+  }
 }
