@@ -7,7 +7,7 @@ interface INavigationLinkProps {
   to: string;
 }
 
-export default function ({ text, to }: INavigationLinkProps) {
+export default function NavigationLink({ text, to }: INavigationLinkProps) {
   return (
     <Link to={to} className={cls.navigationLink}>
       {text}

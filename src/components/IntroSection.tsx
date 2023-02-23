@@ -15,16 +15,16 @@ export default function IntroSection() {
         <PlayActionButton text="Watch online" />
       </div>
       <div className={cls.socialMedia}>
-        <a href="https://www.instagram.com/" target="_blank">
+        <a href="https://www.instagram.com/" target="blank">
           <i className="fa-brands fa-instagram text-xl text-[#ffffff]"></i>
         </a>
-        <a href="https://twitter.com/" target="_blank">
+        <a href="https://twitter.com/" target="blank">
           <i className="fa-brands fa-twitter text-xl text-[#ffffff]"></i>
         </a>
-        <a href="https://www.youtube.com/" target="_blank">
+        <a href="https://www.youtube.com/" target="blank">
           <i className="fa-brands fa-youtube text-xl text-[#ffffff]"></i>
         </a>
-        <a href="https://vk.com/" target="_blank">
+        <a href="https://vk.com/" target="blank">
           <i className="fa-brands fa-vk text-xl text-[#ffffff]"></i>
         </a>
 

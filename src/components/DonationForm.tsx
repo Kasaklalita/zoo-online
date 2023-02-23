@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import mountains from "./../assets/mountains.jpg";
 import ActionButton from "./UI/ActionButton";
 import SecondaryInput from "./UI/SecondaryInput";
@@ -6,6 +6,10 @@ import SecondaryInput from "./UI/SecondaryInput";
 export default function DonationForm() {
   const [choosenAnimal, setChoosenAnimal] = useState("");
   const [toDonate, setToDonate] = useState("");
+
+  const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+    console.log(e.target.value);
+  };
 
   return (
     <div className="flex">
@@ -17,12 +21,12 @@ export default function DonationForm() {
         <div className="justify-center flex items-center gap-14">
           <SecondaryInput
             placeholder="Choose an animal"
-            onChange={() => {}}
+            onChange={onChangeHandler}
             value={choosenAnimal}
           />
           <SecondaryInput
             placeholder="To donate"
-            onChange={() => {}}
+            onChange={onChangeHandler}
             value={choosenAnimal}
           />
         </div>
@@ -31,17 +35,17 @@ export default function DonationForm() {
             <h1 className="text-lg text-[#4f4f4f] font-bold">About you</h1>
             <SecondaryInput
               placeholder="Name"
-              onChange={() => {}}
+              onChange={onChangeHandler}
               value={choosenAnimal}
             />
             <SecondaryInput
               placeholder="Email"
-              onChange={() => {}}
+              onChange={onChangeHandler}
               value={choosenAnimal}
             />
             <SecondaryInput
               placeholder="Phone"
-              onChange={() => {}}
+              onChange={onChangeHandler}
               value={choosenAnimal}
             />
           </div>
@@ -49,17 +53,17 @@ export default function DonationForm() {
             <h1 className="text-lg text-[#4f4f4f] font-bold">Checkout</h1>
             <SecondaryInput
               placeholder="Card number"
-              onChange={() => {}}
+              onChange={onChangeHandler}
               value={choosenAnimal}
             />
             <SecondaryInput
               placeholder="Expiry date"
-              onChange={() => {}}
+              onChange={onChangeHandler}
               value={choosenAnimal}
             />
             <SecondaryInput
               placeholder="CVC"
-              onChange={() => {}}
+              onChange={onChangeHandler}
               value={choosenAnimal}
             />
           </div>
